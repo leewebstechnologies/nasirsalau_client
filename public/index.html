@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css"
+    />
+
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+      body {
+        font-family: "Lora";
+      }
+      section {
+        padding: 100px 0 70px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .title-box {
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 60px;
+      }
+      .title-box:after {
+        content: "";
+        width: 50px;
+        height: 3px;
+        position: absolute;
+        bottom: -20px;
+        left: calc(50% - 25px);
+        background-color: #30addd;
+      }
+      .section-title {
+        margin-top: 0;
+      }
+
+      .c-table {
+        width: 100%;
+        height: 100%;
+        display: table;
+        text-align: center;
+      }
+      .ct-cell {
+        color: #fff;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .overlay-light,
+      .overlay-dark {
+        position: relative;
+      }
+      .overlay-light div,
+      .overlay-dark div {
+        z-index: 2;
+      }
+      .overlay-light:after,
+      .overlay-dark:after {
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+      }
+      .overlay-light:after {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      .overlay-dark:after {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .img-full {
+        width: 100%;
+      }
+    </style>
+    <title>Nasir Salau & Co | Leading Law Firm in Nigeria</title>
+  </head>
+  <body data-spy="scroll" data-target="#main-navbar">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-1.12.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

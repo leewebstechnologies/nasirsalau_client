@@ -1,0 +1,52 @@
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: #3b1f22;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+}
+.navbar-default {
+  background-color: #a0636a;
+  border-color: transparent;
+}
+.navbar-brand img {
+  width: 60px;
+   transition: all 0.4s ease-in-out;
+}
+.navbar-toggle {
+  border-radius: 0;
+}
+@media (min-width: 768px) {
+  .navbar-brand img {
+    width: 110px;
+  }
+  .navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.img-responsive {
+  margin-top: -2rem;
+  @media screen and (max-width: 786px) {
+    margin-top: -1.5rem;
+  }
+}
+
+.brand-name {
+    margin-top: -5rem;
+    margin-left: 10rem;
+    color: #fff;
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+        margin-top: -30px;
+        margin-left: 5rem;
+    }
+}
