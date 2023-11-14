@@ -1,0 +1,57 @@
+.contact {
+  background-color: #f2eeed;
+  color: #969595;
+}
+.logo {
+  width: 20rem;
+  margin-top: -2rem;
+  margin-left: -2rem;
+}
+.contact ul {
+  padding-left: 0;
+}
+.contact ul li {
+  list-style-type: none;
+}
+.contact ul li span {
+  padding-right: 10px;
+}
+.contact ul,
+.contact p {
+  line-height: 1.7;
+  font-family: "Roboto";
+}
+.input-group-addon,
+.form-control {
+  background-color: #fff;
+  border-color: transparent;
+}
+.contact .input-group {
+  padding-bottom: 20px;
+}
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
+.input-group-btn:first-child > .btn:not(:first-child),
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group > .btn,
+.input-group-btn:last-child > .dropdown-toggle {
+  border-radius: 0;
+}
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-radius: 0;
+}
+.contact button {
+  background-color: #a0636a;
+  border-radius: 0;
+  color: #fff;
+}
+.contact button {
+  padding: 8px;
+}

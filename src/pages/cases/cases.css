@@ -11,12 +11,18 @@
 }
 
 .slider-1-item-box h2 {
-  margin-top: 1rem;
-  /* margin: 10px auto 20px; */
+  /* margin-top: 1rem; */
+  margin: 10px auto 20px;
   text-transform: uppercase;
 }
 .slider-icon {
-  font-size: 72px;
+  font-size: 92px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider-icon {
+    font-size: 150px;
+  }
 }
 .slider-1-item-box p {
   line-height: 1.5;
@@ -55,30 +61,24 @@
 .carousel {
   background-color: #a0636a;
   width: 48rem;
-  height: 40rem;
+  height: 45rem;
   margin-right: 20rem;
+  @media screen and (max-width: 768px) {
+    width: 28rem;
+    height: 60rem;
+    margin-left: 40px;
+  }
 }
 
-.carouselIcon {
+/* .carouselIcon {
   font-size: 20px;
   color: #fff;
-}
+} */
 
 .imageIcon {
   width: 80px;
   margin-top: -30px;
   margin-left: -30px;
-  
-}
-
-
-@media screen and (max-width: 768px) {
-  .carousel {
-    width: 28rem;
-    height: 50rem;
-    margin-left: 40px;
-    /* margin-right: 50px; */
-  }
 }
 
 .container-slider {

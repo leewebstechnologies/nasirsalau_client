@@ -55,28 +55,32 @@ const Cases = () => {
 
             {/* carousel */}
 
-            <div className="carousel col-sm-7 col-sm-offset-1">
+            <div className="carousel col-sm-12 col-sm-offset-1">
               <div id="slider_1" className="owl-carousel">
-                {sliderImg.map((obj, index) => {
-                  return (
-                    <div
-                      className={
-                        slideIndex === index + 1 ? "slide active-anim" : "slide"
-                      }
-                      key={obj.id}
-                    >
-                      <div className="slider-1-item-box">
-                        <img
-                          className="imageIcon"
-                          src={obj.image}
-                          alt="sliderImages"
-                        />
-                        <h2>{obj.title}</h2>
-                        <p>{obj.description}</p>
+                <div className="item">
+                  {sliderImg.map((obj, index) => {
+                    return (
+                      <div
+                        className={
+                          slideIndex === index + 1
+                            ? "slide active-anim"
+                            : "slide"
+                        }
+                        key={obj.id}
+                      >
+                        <div className="slider-1-item-box">
+                          <img
+                            className="slider-icon"
+                            src={obj.image}
+                            alt="sliderIcon"
+                          />
+                          <h2>{obj.title}</h2>
+                          <p>{obj.description}</p>
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
 
                 <BtnSlider moveSlide={nextSlide} direction={"next"} />
                 <BtnSlider moveSlide={prevSlide} direction={"prev"} />

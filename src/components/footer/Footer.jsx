@@ -12,16 +12,16 @@ const Footer = () => {
             <div className="col-sm-6">
               <div className="footer-social">
                 <a href="#">
-                  <i className="ion-social-facebook" />
+                  <i class="fa-brands fa-square-facebook"></i>
                 </a>
                 <a href="#">
-                  <i className="ion-social-linkedin-outline" />
+                  <i class="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="#">
                   <i className="ion-social-skype-outline" />
                 </a>
                 <a href="#">
-                  <i className="ion-social-twitter" />
+                  <i class="fa-brands fa-square-x-twitter"></i>
                 </a>
               </div>
             </div>

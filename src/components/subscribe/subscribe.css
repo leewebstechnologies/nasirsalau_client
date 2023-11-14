@@ -1,0 +1,19 @@
+.subscribe {
+  border-bottom: 3px solid #a0636a;
+  background-color: #3b1f22;
+  color: #969595;
+}
+.subscribe h2 {
+  color: #fff;
+}
+.subscribe-form {
+  margin-top: 30px;
+}
+
+.btn {
+  border: none;
+  border-radius: 0px;
+  background-color: #a0636a;
+  color: #fff;
+  margin-bottom: 10px;
+}

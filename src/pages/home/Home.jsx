@@ -12,7 +12,7 @@ const Home = () => {
                   <h1 className="profession">LEGAL PRACTITIONERS</h1>
                 </div>
               </div>
-              <a className="btn btn-default btn-header" href="#">
+              <a className="btn btn-default btn-header" href="#contact">
                 Contact us
               </a>
             </div>
@@ -59,19 +59,21 @@ const Home = () => {
             <div className="row">
               <div className="col-sm-10 col-sm-offset-1">
                 <p>
-                  Lorem Ipsum dolor sit amet, consectetur adipisicing elit.
-                  Alias provident libero tenetur asperiores perspiciatis eum,
-                  obcaecati ex animi, neque, autem possimus dolor veniam
-                  recusandae ipsum aspernatur perferendis aliquid culpa earum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Excepturi dolor aperiam, suscipit architecto.
+                  The Firm (Nasir Salau & Co.) was established on 1st January,
+                  1996 and registered with the corporate Affairs Commission with
+                  Certificate No. LAZ 037964 with a vision to becoming one of
+                  Nigeria’s foremost corporate legal practice firms in terms of
+                  quality of practice and clientele. It provides top-notch
+                  legal services to both local and international clients.It has
+                  its registered office address at No. 78A, Lewis Street, Lagos
+                  Island, Lagos.
                 </p>
               </div>
               <div className="col-sm-6">
                 <h1>
                   Get your free
                   <br />
-                  <small style={{color: "#fff"}}>Consultation today</small>
+                  <small style={{ color: "#fff" }}>Consultation today</small>
                 </h1>
               </div>
               <div className="col-sm-6">

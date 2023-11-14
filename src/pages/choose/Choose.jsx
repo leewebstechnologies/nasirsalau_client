@@ -1,6 +1,6 @@
-import "./why.css";
+import "./choose.css";
 
-const Why = () => {
+const Choose = () => {
   return (
     <>
       <section id="choose" class="choose overlay-light">
@@ -52,4 +52,4 @@ const Why = () => {
   );
 };
 
-export default Why;
+export default Choose;
