@@ -1,0 +1,25 @@
+.team {
+  background-color: #f2eeed;
+}
+.team-box {
+  padding: 10px;
+  margin-bottom: 30px;
+  /*background-color: #fff;*/
+  transition: all 0.4s ease-in-out;
+}
+.team-box:hover {
+  box-shadow: 2px 2px 5px #0054a6;
+}
+.team-detail {
+  background-color: #e1e1e1;
+  color: #4b4b4b;
+  padding: 20px;
+}
+.team-box ul {
+  text-align: center;
+  padding-left: 0;
+}
+.team-box ul li {
+  list-style-type: none;
+}
+

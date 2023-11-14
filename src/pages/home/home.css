@@ -18,7 +18,6 @@
   }
 }
 
-
 .intro h1:after,
 .intro h1:before {
   content: "";
@@ -49,13 +48,27 @@
   }
 }
 
+.fun {
+  text-align: center;
+  text-transform: uppercase;
+}
+.fun-box {
+  margin-bottom: 30px;
+}
+.fun-number {
+  font-size: 50px;
+}
+.fun-title {
+  font-size: 18px;
+}
+
 .cta {
   color: #fff;
   text-align: center;
   padding: 0;
 }
 .cta-bg {
-  background-color: #253250;
+  background-color: #a0636a;
   padding: 100px 0;
 }
 .cta h1 {

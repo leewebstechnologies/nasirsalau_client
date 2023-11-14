@@ -1,0 +1,22 @@
+.faq {
+  background-image: url(../../../public/assets/images/faq.jpg);
+}
+.faq .panel-group .panel {
+  margin-bottom: 20px;
+}
+.faq .panel-default > .panel-heading {
+  background-color: #3b1f22;
+}
+.faq .panel-body {
+  background-color: #a0636a;
+  color: #bcbcbc;
+}
+.faq .panel-default > .panel-heading a {
+  color: #fff;
+  text-transform: uppercase;
+}
+.faq .panel-heading,
+.faq .panel-body,
+.faq .panel-group .panel {
+  border-radius: 0;
+}

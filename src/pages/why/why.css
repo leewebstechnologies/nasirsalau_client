@@ -1,0 +1,18 @@
+.choose {
+  text-align: center;
+  background-image: url(../../../public/assets/images/choose.jpg);
+}
+.choose-box {
+  margin-bottom: 30px;
+}
+.choose-icon {
+  color: #4c4c4c;
+  font-size: 72px;
+}
+.choose-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}

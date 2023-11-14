@@ -71,7 +71,7 @@ const Home = () => {
                 <h1>
                   Get your free
                   <br />
-                  <small>Consultation today</small>
+                  <small style={{color: "#fff"}}>Consultation today</small>
                 </h1>
               </div>
               <div className="col-sm-6">
