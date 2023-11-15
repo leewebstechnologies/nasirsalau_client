@@ -18,9 +18,6 @@ const Footer = () => {
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="#">
-                  <i className="ion-social-skype-outline" />
-                </a>
-                <a href="#">
                   <i class="fa-brands fa-square-x-twitter"></i>
                 </a>
               </div>
