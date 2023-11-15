@@ -63,9 +63,9 @@ const Home = () => {
                   1996 and registered with the corporate Affairs Commission with
                   Certificate No. LAZ 037964 with a vision to becoming one of
                   Nigeria’s foremost corporate legal practice firms in terms of
-                  quality of practice and clientele. It provides top-notch
-                  legal services to both local and international clients.It has
-                  its registered office address at No. 78A, Lewis Street, Lagos
+                  quality of practice and clientele. It provides top-notch legal
+                  services to both local and international clients.It has its
+                  registered office address at No. 78A, Lewis Street, Lagos
                   Island, Lagos.
                 </p>
               </div>

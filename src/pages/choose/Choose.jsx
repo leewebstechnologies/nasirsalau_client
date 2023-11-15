@@ -17,31 +17,75 @@ const Choose = () => {
           <div class="row">
             <div class="col-sm-4">
               <div class="choose-box">
-                <span class="choose-icon ion-social-angular-outline"></span>
-                <h3 class="choose-title">Best Attorneys</h3>
+                <span class="choose-icon ion-android-bulb"></span>
+                <h3 class="choose-title">Completely trustable</h3>
                 <p class="choose-detail">
-                  Praesent dambus &amp; Send aug eget sollicitudin velit
-                  malesuada Aliquam blandit Mani leumat eget sollicauchnex
+                  We are business lawyers and we are here to assist you with
+                  starting a new business, acquiring a business, buying and
+                  selling commercial property, .
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="choose-box">
+                <span class="choose-icon ion-social-angular-outline"></span>
+                <h3 class="choose-title">INTEGRITY & DISCIPLINE</h3>
+                <p class="choose-detail">
+                  We regard reliability, honesty and compliance with applicable
+                  rules and procedures as a successful lawyer’s primarily tools
+                  of trade. In realization of this, we ensure this is drilled
+                  into and inculcated in every member of the firm.
                 </p>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="choose-box">
                 <span class="choose-icon ion-compose"></span>
-                <h3 class="choose-title">Highly Qualified</h3>
+                <h3 class="choose-title">DILIGENCE & INNOVATION</h3>
                 <p class="choose-detail">
-                  Praesent dambus &amp; Send aug eget sollicitudin velit
-                  malesuada Aliquam blandit Mani leumat eget sollicauchnex
+                  Hard work, creativity, initiative, meticulousness in job
+                  execution, exhibition of an enterprising and pioneering spirit
+                  are all values the Firm enshrines in its practice, and among
+                  its staff.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="choose-box">
+                <span class="choose-icon ion-android-bulb"></span>
+                <h3 class="choose-title">COMPETENCE</h3>
+                <p class="choose-detail">
+                  It is our firm’s mission to provide high quality legal service
+                  to our clients.
                 </p>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="choose-box">
-                <span class="choose-icon ion-android-bulb"></span>
-                <h3 class="choose-title">Completely trustable</h3>
+                <span class="choose-icon ion-social-angular-outline"></span>
+                <h3 class="choose-title">TEAMWORK & FAMILY SPIRIT</h3>
                 <p class="choose-detail">
-                  Praesent dambus &amp; Send aug eget sollicitudin velit
-                  malesuada Aliquam blandit Mani leumat eget sollicauchnex
+                  Global trends lean towards teamwork in solving problems, and
+                  this is why we cultivate within the Firm the culture of
+                  respect, friendliness, politeness, knowledge sharing,
+                  complementing one another, having and nurturing a sense of
+                  belonging, and demonstrating loyalty to each other.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="choose-box">
+                <span class="choose-icon ion-compose"></span>
+                <h3 class="choose-title">CLIENT SATISFACTION</h3>
+                <p class="choose-detail">
+                  Growth is largely dependent on a firm's ability to satisfy its
+                  clients. Consequently, the Firm places a premium on meeting
+                  timelines, turning out excellent work products, being
+                  accessible and excellent relationship management as key
+                  ingredients to ensuring clients' satisfaction.
                 </p>
               </div>
             </div>

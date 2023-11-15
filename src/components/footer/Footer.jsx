@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <p>@ Nasir Salau & co</p>
+              <p>@ 2023 Nasir Salau & Co</p>
             </div>
             <div className="col-sm-6">
               <div className="footer-social">
