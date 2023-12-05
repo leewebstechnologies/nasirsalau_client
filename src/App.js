@@ -1,5 +1,4 @@
 import Nav from "./components/nav/Nav";
-import Cases from "./pages/cases/Cases";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
 import Practice from "./pages/practice/Practice";
@@ -15,8 +14,7 @@ function App() {
       <Nav />
       <Home />
       <Choose />
-      <Practice />
-      <Cases />
+      <Practice />  
       <Team />
       <Faq />
       <Contact />

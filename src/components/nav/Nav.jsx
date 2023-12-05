@@ -42,9 +42,6 @@ const Nav = () => {
                 <a href="#practice">practice</a>
               </li>
               <li>
-                <a href="#slider-1">Cases</a>
-              </li>
-              <li>
                 <a href="#team">Our Team</a>
               </li>
               <li>
