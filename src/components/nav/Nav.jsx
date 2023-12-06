@@ -42,10 +42,13 @@ const Nav = () => {
                 <a href="#practice">practice</a>
               </li>
               <li>
-                <a href="#case">case</a>
+                <a href="#card-1">Cases</a>
               </li>
               <li>
                 <a href="#team">Our Team</a>
+              </li>
+              <li>
+                <a href="#clients">Clients</a>
               </li>
               <li>
                 <a href="#faq">FAQ</a>
