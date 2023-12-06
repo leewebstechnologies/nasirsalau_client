@@ -2,6 +2,7 @@ import Nav from "./components/nav/Nav";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
 import Practice from "./pages/practice/Practice";
+import Case from "./pages/case/Case";
 import Team from "./pages/team/Team";
 import Faq from "./pages/faq/Faq";
 import Contact from "./pages/contact/Contact";
@@ -14,7 +15,8 @@ function App() {
       <Nav />
       <Home />
       <Choose />
-      <Practice />  
+      <Practice />
+      <Case />
       <Team />
       <Faq />
       <Contact />
