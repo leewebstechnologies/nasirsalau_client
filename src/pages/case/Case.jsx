@@ -6,9 +6,9 @@ const Case = () => {
       <section id="card-1" className="card-1 card-1 overlay-light">
         <div className="container">
           <div className="row">
-            <div className="col-sm-4 hidden-xs"></div>
+            <div className="col-sm-1 hidden-xs"></div>
             <div className="col-sm-7 col-sm-offset-1">
-              <div id="card_1" className="owl-carousel">
+              <div id="card_1">
                 <div className="item">
                   <div className="card-1-item-box">
                     <img

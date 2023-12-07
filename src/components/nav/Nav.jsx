@@ -48,9 +48,6 @@ const Nav = () => {
                 <a href="#team">Our Team</a>
               </li>
               <li>
-                <a href="#clients">Clients</a>
-              </li>
-              <li>
                 <a href="#faq">FAQ</a>
               </li>
               <li>
