@@ -1,6 +1,12 @@
 import "./case.css";
-
+import { useState } from "react";
+import data from "../../data";
+import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 const Case = () => {
+  // eslint-disable-next-line
+  const [items, setItems] = useState(data);
+  const [index, setIndex] = useState(0);
+
   return (
     <>
       <section id="card-1" className="card-1 card-1 overlay-light">
@@ -11,22 +17,37 @@ const Case = () => {
               <div id="card_1">
                 <div className="item">
                   <div className="card-1-item-box">
-                    <img
-                      className="itemImage"
-                      src="../assets/images/house.png"
-                      alt="itemImage"
-                    />
-                    <h2>We won over 200 family cases</h2>
-                    <p>
-                      A lawyer is a person who practices law, as a barrister,
-                      judge, attorney, counsel or solicitor. Working as a lawyer
-                      involves the practical application of abstract legal
-                      theories and knowledge to solve specific individualized
-                      problems.
-                    </p>
+                    {items.map((item, itemIndex) => {
+                      const { id, image, title, description } = item;
+                      // more stuff coming up
+                      let position = "nextSlide";
+                      if (itemIndex === index) {
+                        position = "activeSlide";
+                      }
+
+                      if (
+                        item === index - 1 ||
+                        (index === 0 && itemIndex === items.length - 1)
+                      ) {
+                        position = "lastSlide";
+                      }
+                      return (
+                        <div className="position" key={id}>
+                          <img className="itemImage" src={image} alt={title} />
+                          <h2>{title}</h2>
+                          <p>{description}</p>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
+              <button className="prev" onClick={() => setIndex(index - 1)}>
+                <ChevronLeft />
+              </button>
+              <button className="next" onClick={() => setIndex(index + 1)}>
+                <ChevronRight />
+              </button>
             </div>
           </div>
         </div>
