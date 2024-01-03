@@ -12,7 +12,7 @@ const Home = () => {
                   <h1 className="profession">LEGAL PRACTITIONERS</h1>
                 </div>
               </div>
-              <a className="btn btn-default btn-header" href="#contact">
+              <a style={{backgroundColor: "#a0636a"}} className="btn btn-default btn-header" href="#contact">
                 Contact us
               </a>
             </div>

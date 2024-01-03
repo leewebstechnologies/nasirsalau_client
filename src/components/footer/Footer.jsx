@@ -11,13 +11,13 @@ const Footer = () => {
             </div>
             <div className="col-sm-6">
               <div className="footer-social">
-                <a href="#">
+                <a href="https://m.facebook.com/profile.php/?id=662818000&name=STSDirectNavUserDecorator">
                   <i class="fa-brands fa-square-facebook"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/nasir-salau-06894861?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/nasirlawfirm">
                   <i class="fa-brands fa-square-x-twitter"></i>
                 </a>
               </div>

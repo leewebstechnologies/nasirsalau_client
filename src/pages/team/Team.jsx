@@ -24,10 +24,10 @@ const Team = () => {
                 <div className="team-detail">
                   <ul>
                     <li>
-                      <h3>Jewel Jahan</h3>
+                      <h3>Nasir Salau</h3>
                     </li>
                     <li>
-                      <h4>Counsel</h4>
+                      <h4>Lead Counsel</h4>
                     </li>
                     <li>Family Law</li>
                     <li>Commercial Lending,</li>
@@ -46,7 +46,7 @@ const Team = () => {
                 <div className="team-detail">
                   <ul>
                     <li>
-                      <h3>Rub Elvi</h3>
+                      <h3>Mariam Adeniyi</h3>
                     </li>
                     <li>
                       <h4>Member</h4>
@@ -68,7 +68,7 @@ const Team = () => {
                 <div className="team-detail">
                   <ul>
                     <li>
-                      <h3>K. Survy</h3>
+                      <h3>Ifeanyi Alex</h3>
                     </li>
                     <li>
                       <h4>Member</h4>

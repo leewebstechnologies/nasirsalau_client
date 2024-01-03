@@ -26,25 +26,3 @@
   font-size: 20px;
   margin: 0;
 }
-
-.consultation {
-  background-color: #f2eeed;
-}
-.consultation-form .form-control {
-  margin-bottom: 30px;
-  border-radius: 0;
-}
-.consultation-form .bootstrap-select .btn,
-.consultation-form .dropdown-menu {
-  border-radius: 0;
-}
-.btn-cn {
-  background-color: #a0636a;
-  border-radius: 0;
-  color: #fff;
-}
-.btn-cn:hover {
-  border-color: #a0636a;
-  background-color: transparent;
-  color: #a0636a;
-}
