@@ -1,34 +1,41 @@
-.card-1 {
+.slider-1 {
   text-align: center;
   background-image: url(../../../public/assets/images/familly-back.jpg);
-}
-
-#card_1 {
-  background-color: #a0636a;
-  margin-top: 10px;
-
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-.card-1-item-box {
+
+
+.slider-1-item-box {
   color: #fff;
-  padding: 50px;
 }
-.card-1-item-box h2 {
+
+@media screen and (max-width: 768px) {
+  .slider-1-item-box {
+    width: 300px;
+    margin-bottom: 400px;
+    height: 100px;
+  }
+}
+
+.slider-1-item-box h2 {
   margin: 10px auto 20px;
   text-transform: uppercase;
 }
-.card-icon {
+.slider-icon {
   font-size: 72px;
 }
-.card-1-item-box p {
+.slider-1-item-box p {
   line-height: 1.5;
   font-size: 16px;
 }
-.card_1 {
+.slider_1 {
   position: relative;
+  padding: 50rem;
 }
-.card_1 {
+
+.slider_1 .owl-controls .owl-dots {
   bottom: 40px;
   position: relative;
 }
@@ -36,38 +43,40 @@
   margin-bottom: -70px;
 }
 
-.itemImage {
+.item-img {
   width: 50px;
-  
 }
 
-/* slider css */
 .prev,
 .next {
-  color: #000;
   position: absolute;
   top: 200px;
-  transform: translate-Y(-50%);
-  background: gray;
-  width: 1.25rem;
-  height: 1.25rem;
+  transform: translateY(-50%);
+  background: hsl(210, 22%, 49%);
+  color: #fff; 
   display: grid;
-  place-items: center;
   border-color: transparent;
   font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
 }
-
 .prev:hover,
 .next:hover {
-  background: gray;
+  background: #3b1f22;
 }
 .prev {
   left: 0;
-  margin-left: 2rem;
+  top: 15rem;
+  margin-left: 25px;
 }
 .next {
   right: 0;
-  margin-right: 2rem;
+  top: 15rem;
+  margin-right: 25px;
+}
+.left {
+  font-size: 50px;
 }
 @media (min-width: 800px) {
   .text {
@@ -75,15 +84,38 @@
   }
   .prev,
   .next {
-    width: 200rem;
+    width: 2rem;
     height: 2rem;
     font-size: 1.5rem;
-    color: #fff;
   }
 }
 
-.icon {
-  width: 200rem;
+article {
+  background-color: #a0636a;
+  position: absolute;
+  padding: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  opacity: 0;
+  transition: all 0.3s linear;
 }
 
+@media screen and (max-width: 768px) {
+  #carousel-wrapper {
+    height: 500px;
+  }
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide {
+  transform: translateX(-1%);
+}
+article.nextSlide {
+  transform: translateX(2%);
+}
 

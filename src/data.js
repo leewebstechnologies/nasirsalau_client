@@ -11,7 +11,7 @@ const items = [
     image: "../../assets/images/b.png",
     title: "MEDICAL MALPRACTICE",
     description:
-      "Chaman Law Firm: Nigeria's premier law firm, globally recognized for excellence. Our highly experienced attorneys, with both domestic and international expertise, passionately support clients on diverse issues. Committed to delivering top-quality legal services, we blend tradition with innovation,..",
+      "Nasir Salau & Co: Nigeria's premier law firm, globally recognised for excellence. Our highly experienced attorneys, with both domestic and international expertise, passionately support clients on diverse issues. Committed to delivering top-quality legal services, we blend tradition with innovation.",
   },
   {
     id: 3,

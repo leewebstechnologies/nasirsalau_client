@@ -42,7 +42,7 @@ const Nav = () => {
                 <a href="#practice">practice</a>
               </li>
               <li>
-                <a href="#card-1">Cases</a>
+                <a href="#cases">Cases</a>
               </li>
               <li>
                 <a href="#team">Our Team</a>
