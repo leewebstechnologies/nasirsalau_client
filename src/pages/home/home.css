@@ -34,6 +34,7 @@
   top: 0;
 }
 .btn-header {
+  background-color: #a0636a;
   position: absolute;
   bottom: 100px;
   text-transform: uppercase;
