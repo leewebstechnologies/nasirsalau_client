@@ -84,9 +84,9 @@ const Contact = () => {
                 <button
                   id="cfsubmit"
                   type="submit"
-                  className="btn btn-default btn-block"
+                  className="btn-default btn-block btn-cn"
                 >
-                  Send your Message <span className="ion-paper-airplane" />
+                  Send your Message
                 </button>
               </form>
               <div id="contactFormResponse" />

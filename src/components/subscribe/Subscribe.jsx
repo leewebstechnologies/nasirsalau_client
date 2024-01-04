@@ -31,7 +31,7 @@ const Subscribe = () => {
                     </div>
                   </div>
                 </div>
-                <button style={{backgroundColor: "#a0636a"}} type="submit" class="btn btn-default btn-block">
+                <button type="submit" class="btn btn-default btn-block">
                   Get it
                 </button>
               </form>
