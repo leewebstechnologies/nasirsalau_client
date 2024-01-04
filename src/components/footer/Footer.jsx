@@ -1,13 +1,15 @@
 import "./footer.css";
 
 const Footer = () => {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <>
       <footer className="footer">
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <p>@ 2023 Nasir Salau & Co</p>
+              <p>Copyright © {year} Nasir Salau & Co</p>
             </div>
             <div className="col-sm-6">
               <div className="footer-social">
