@@ -1,55 +1,55 @@
-$( document ).ready(function() {
-    $('body').scrollspy({ target: '#main-navbar' })
+// $( document ).ready(function() {
+//     $('body').scrollspy({ target: '#main-navbar' })
     
-    $('#slider_1').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        dots: true,
-        items: 1,
-    })
-    $('#test-slider').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        dots: true,
-        items: 1,
-    })
+//     $('#slider_1').owlCarousel({
+//         loop:true,
+//         margin:10,
+//         nav:false,
+//         dots: true,
+//         items: 1,
+//     })
+//     $('#test-slider').owlCarousel({
+//         loop:true,
+//         margin:10,
+//         nav:false,
+//         dots: true,
+//         items: 1,
+//     })
 
-    $("#contactForm").submit(function(e){
+//     $("#contactForm").submit(function(e){
 
-        e.preventDefault();
-        var $ = jQuery;
+//         e.preventDefault();
+//         var $ = jQuery;
 
-        var postData        = $(this).serializeArray(),
-            formURL         = $(this).attr("action"),
-            $cfResponse     = $('#contactFormResponse'),
-            $cfsubmit       = $("#cfsubmit"),
-            cfsubmitText    = $cfsubmit.text();
+//         var postData        = $(this).serializeArray(),
+//             formURL         = $(this).attr("action"),
+//             $cfResponse     = $('#contactFormResponse'),
+//             $cfsubmit       = $("#cfsubmit"),
+//             cfsubmitText    = $cfsubmit.text();
 
-        $cfsubmit.text("Sending...");
+//         $cfsubmit.text("Sending...");
 
 
-        $.ajax(
-            {
-                url : formURL,
-                type: "POST",
-                data : postData,
-                success:function(data)
-                {
-                    $cfResponse.html(data);
-                    $cfsubmit.text(cfsubmitText);
-                },
-                error: function(data)
-                {
-                    alert("Error occurd! Please try again");
-                }
-            });
+//         $.ajax(
+//             {
+//                 url : formURL,
+//                 type: "POST",
+//                 data : postData,
+//                 success:function(data)
+//                 {
+//                     $cfResponse.html(data);
+//                     $cfsubmit.text(cfsubmitText);
+//                 },
+//                 error: function(data)
+//                 {
+//                     alert("Error occurd! Please try again");
+//                 }
+//             });
 
-        return false;
+//         return false;
 
-    });
-});
+//     });
+// });
 /*------------------------------------------
  Subscribe form ajax
  ------------------------------------------*/
