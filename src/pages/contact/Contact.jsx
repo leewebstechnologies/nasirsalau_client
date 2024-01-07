@@ -12,7 +12,8 @@ const Contact = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const { name, email, message } = formData;
+  // eslint-disable-next-line
+  const { username, email, message } = formData;
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
@@ -94,9 +95,9 @@ const Contact = () => {
                       className="form-control"
                       type="text"
                       placeholder="Name"
-                      value={name}
+                      value={username}
                       onChange={handleChangeInput}
-                      name="name"
+                      name="username"
                       required
                     />
                   </div>

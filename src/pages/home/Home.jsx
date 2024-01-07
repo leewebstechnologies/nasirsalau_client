@@ -1,6 +1,25 @@
 import "./home.css";
+import { useState, useEffect } from "react";
+import { client } from "../../client";
+
+const homes = [
+  {
+    figure: 2001,
+    percentage: 97,
+    amount: 30,
+  },
+];
 
 const Home = () => {
+  const [homes, setHomes] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "homes"]';
+
+    client.fetch(query).then((data) => {
+      setHomes(data);
+    });
+  }, []);
   return (
     <>
       <header id="header" className="header overlay-dark">
@@ -30,23 +49,32 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           <div className="row">
             <div className="col-sm-4">
               <div className="fun-box">
-                <p class="fun-number">2000+</p>
-
+                {/* <p class="fun-number">2000+</p> */}
+                {homes.map((home) => (
+                  <p className="fun-number">{home.figure}+</p>
+                ))}
                 <p className="fun-title">Cases were faught</p>
               </div>
             </div>
             <div className="col-sm-4">
               <div className="fun-box">
-                <p className="fun-number">96.5%</p>
+                {/* <p className="fun-number">96.5%</p> */}
+                {homes.map((home) => (
+                  <p className="fun-number">{home.percentage}%</p>
+                ))}
                 <p className="fun-title">Cases have been won</p>
               </div>
             </div>
             <div className="col-sm-4">
               <div className="fun-box">
-                <p className="fun-number">$25k</p>
+                {/* <p className="fun-number">$25k</p> */}
+                {homes.map((home) => (
+                  <p className="fun-number">{home.amount}k</p>
+                ))}
                 <p className="fun-title">Money Recovered</p>
               </div>
             </div>
