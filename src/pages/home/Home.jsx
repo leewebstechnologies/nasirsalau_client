@@ -1,14 +1,4 @@
 import "./home.css";
-// eslint-disable-next-line
-import { useState } from "react";
-
-const homes = [
-  {
-    number: "2001",
-    percentage: "97",
-    amount: "30k",
-  },
-];
 
 const Home = () => {
   return (
@@ -43,28 +33,20 @@ const Home = () => {
           <div className="row">
             <div className="col-sm-4">
               <div className="fun-box">
-              {/* <p class="fun-number">2000+</p> */}
-                {homes.map((home) => (
-                  <p className="fun-number">{home.number}+</p>
-                ))}
+                <p class="fun-number">2000+</p>
+
                 <p className="fun-title">Cases were faught</p>
               </div>
             </div>
             <div className="col-sm-4">
               <div className="fun-box">
-                {homes.map((home) => (
-                  <p className="fun-number">{home.percentage}%</p>
-                ))}
-                {/* <p className="fun-number">96.5%</p> */}
+                <p className="fun-number">96.5%</p>
                 <p className="fun-title">Cases have been won</p>
               </div>
             </div>
             <div className="col-sm-4">
               <div className="fun-box">
-                {homes.map((home) => (
-                  <p className="fun-number">{home.amount}+</p>
-                ))}
-                {/* <p className="fun-number">$25k</p> */}
+                <p className="fun-number">$25k</p>
                 <p className="fun-title">Money Recovered</p>
               </div>
             </div>
