@@ -2,13 +2,14 @@ import "./home.css";
 import { useState, useEffect } from "react";
 import { client } from "../../client";
 
-const homes = [
-  {
-    figure: 2001,
-    percentage: 97,
-    amount: 30,
-  },
-];
+// eslint-disable-next-line
+// const homes = [
+//   {
+//     figure: 2001,
+//     percentage: 97,
+//     amount: 30,
+//   },
+// ];
 
 const Home = () => {
   const [homes, setHomes] = useState([]);
