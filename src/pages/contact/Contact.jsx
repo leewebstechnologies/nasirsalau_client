@@ -1,6 +1,50 @@
 import "./contact.css";
+import { useState } from "react";
+import { client } from "../../client";
 
 const Contact = () => {
+  const [error, setError] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const { name, email, message } = formData;
+
+  const handleChangeInput = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (
+      formData.username === "" ||
+      formData.email === "" ||
+      formData.message === ""
+    ) {
+      setError("Empty field(s) ");
+      return;
+    }
+    setLoading(true);
+
+    const contact = {
+      _type: "contact",
+      name: formData.username,
+      email: formData.email,
+      message: formData.message,
+    };
+
+    client.create(contact).then(() => {
+      setLoading(false);
+      setIsFormSubmitted(true);
+      e.preventDefault();
+    });
+  };
+
   return (
     <>
       <section id="contact" className="contact">
@@ -40,55 +84,66 @@ const Contact = () => {
               </ul>
             </div>
             <div className="col-sm-6">
-              <form
-                id="contactForm"
-                action="php/contact_form.php"
-                method="post"
-              >
-                <div className="input-group">
-                  <span className="input-group-addon">
-                    <i className="ion-person" />
-                  </span>
-                  <input
-                    className="form-control"
-                    type="text"
-                    placeholder="Name"
-                    name="name"
-                    required
-                  />
+              {!isFormSubmitted ? (
+                <form id="contactForm" method="post" onSubmit={handleSubmit}>
+                  <div className="input-group">
+                    <span className="input-group-addon">
+                      <i className="ion-person" />
+                    </span>
+                    <input
+                      className="form-control"
+                      type="text"
+                      placeholder="Name"
+                      value={name}
+                      onChange={handleChangeInput}
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div className="input-group">
+                    <span className="input-group-addon">
+                      <i className="ion-email" />
+                    </span>
+                    <input
+                      className="form-control"
+                      name="email"
+                      type="email"
+                      placeholder="Email address"
+                      value={email}
+                      onChange={handleChangeInput}
+                      required
+                    />
+                  </div>
+                  <div className="input-group">
+                    <span className="input-group-addon custom-addon">
+                      <i className="ion-chatbubbles" />
+                    </span>
+                    <textarea
+                      className="form-control"
+                      rows={8}
+                      placeholder="Write Message"
+                      name="message"
+                      value={message}
+                      onChange={handleChangeInput}
+                      defaultValue={""}
+                    />
+                  </div>
+                  <button
+                    id="cfsubmit"
+                    type="submit"
+                    className="btn-default btn-block btn-cn"
+                    onClick={handleSubmit}
+                  >
+                    {!loading ? "Send your Message" : "Sending..."}
+                  </button>
+                  {error !== "" && <p>{error}</p>}
+                </form>
+              ) : (
+                <div>
+                  <h3 className="head-text">Thank you for getting in touch!</h3>
                 </div>
-                <div className="input-group">
-                  <span className="input-group-addon">
-                    <i className="ion-email" />
-                  </span>
-                  <input
-                    className="form-control"
-                    name="email"
-                    type="email"
-                    placeholder="Email address"
-                    required
-                  />
-                </div>
-                <div className="input-group">
-                  <span className="input-group-addon custom-addon">
-                    <i className="ion-chatbubbles" />
-                  </span>
-                  <textarea
-                    className="form-control"
-                    rows={8}
-                    placeholder="Write Message"
-                    name="message"
-                    defaultValue={""}
-                  />
-                </div>
-                <button
-                  id="cfsubmit"
-                  type="submit"
-                  className="btn-default btn-block btn-cn"
-                >
-                  Send your Message
-                </button>
-              </form>
+              )}
+
               <div id="contactFormResponse" />
             </div>
           </div>
