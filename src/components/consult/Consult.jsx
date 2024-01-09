@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./consultation.css";
+import "./consult.css";
 import { client } from "../../client";
 
-const Consultation = () => {
+const Consult = () => {
   const [error, setError] = useState("");
   const [formData, setFormData] = useState({
     name: "",
@@ -34,15 +34,15 @@ const Consultation = () => {
     }
     setLoading(true);
 
-    const consultation = {
-      _type: "consultation",
+    const consult = {
+      _type: "consult",
       name: formData.name,
       phone: formData.phone,
       matter: formData.matter,
       message: formData.message,
     };
 
-    client.create(consultation).then(() => {
+    client.create(consult).then(() => {
       setLoading(false);
       setIsFormSubmitted(true);
       e.preventDefault();
@@ -148,4 +148,4 @@ const Consultation = () => {
   );
 };
 
-export default Consultation;
+export default Consult;

@@ -1,29 +1,41 @@
+import { useState, useEffect } from "react";
+import { client } from "../../client";
 import "./faq.css";
 
 const Faq = () => {
+  const [faqs, setFaqs] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "faqs"]';
+
+    client.fetch(query).then((data) => {
+      setFaqs(data);
+    });
+  }, []);
   return (
     <>
-      <section id="faq" className="faq overlay-light">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="title-box">
-                <p className="section-subtitle">You may want to know</p>
-                <h2 className="section-title">frequently asked questions</h2>
+      <section id="faq" class="faq overlay-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box">
+                <p class="section-subtitle">You may want to know</p>
+                <h2 class="section-title">frequently asked questions</h2>
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-sm-12">
+
+          <div class="row">
+            <div class="col-sm-12">
               <div
-                className="panel-group"
+                class="panel-group"
                 id="accordion"
                 role="tablist"
                 aria-multiselectable="true"
               >
-                <div className="panel panel-default">
-                  <div className="panel-heading" role="tab" id="headingOne">
-                    <h4 className="panel-title">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
                       <a
                         role="button"
                         data-toggle="collapse"
@@ -39,11 +51,11 @@ const Faq = () => {
                   </div>
                   <div
                     id="collapseOne"
-                    className="panel-collapse collapse in"
+                    class="panel-collapse collapse in"
                     role="tabpanel"
                     aria-labelledby="headingOne"
                   >
-                    <div className="panel-body">
+                    <div class="panel-body">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life
                       accusamus terry richardson ad squid. 3 wolf moon officia
                       aute, non cupidatat skateboard dolor brunch. Food truck
@@ -58,11 +70,11 @@ const Faq = () => {
                     </div>
                   </div>
                 </div>
-                <div className="panel panel-default">
-                  <div className="panel-heading" role="tab" id="headingTwo">
-                    <h4 className="panel-title">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
                       <a
-                        className="collapsed"
+                        class="collapsed"
                         role="button"
                         data-toggle="collapse"
                         data-parent="#accordion"
@@ -77,11 +89,11 @@ const Faq = () => {
                   </div>
                   <div
                     id="collapseTwo"
-                    className="panel-collapse collapse"
+                    class="panel-collapse collapse"
                     role="tabpanel"
                     aria-labelledby="headingTwo"
                   >
-                    <div className="panel-body">
+                    <div class="panel-body">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life
                       accusamus terry richardson ad squid. 3 wolf moon officia
                       aute, non cupidatat skateboard dolor brunch. Food truck
@@ -96,11 +108,11 @@ const Faq = () => {
                     </div>
                   </div>
                 </div>
-                <div className="panel panel-default">
-                  <div className="panel-heading" role="tab" id="headingThree">
-                    <h4 className="panel-title">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
                       <a
-                        className="collapsed"
+                        class="collapsed"
                         role="button"
                         data-toggle="collapse"
                         data-parent="#accordion"
@@ -114,11 +126,11 @@ const Faq = () => {
                   </div>
                   <div
                     id="collapseThree"
-                    className="panel-collapse collapse"
+                    class="panel-collapse collapse"
                     role="tabpanel"
                     aria-labelledby="headingThree"
                   >
-                    <div className="panel-body">
+                    <div class="panel-body">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life
                       accusamus terry richardson ad squid. 3 wolf moon officia
                       aute, non cupidatat skateboard dolor brunch. Food truck
@@ -133,11 +145,11 @@ const Faq = () => {
                     </div>
                   </div>
                 </div>
-                <div className="panel panel-default">
-                  <div className="panel-heading" role="tab" id="headingThree">
-                    <h4 className="panel-title">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
                       <a
-                        className="collapsed"
+                        class="collapsed"
                         role="button"
                         data-toggle="collapse"
                         data-parent="#accordion"
@@ -151,11 +163,11 @@ const Faq = () => {
                   </div>
                   <div
                     id="collapseFour"
-                    className="panel-collapse collapse"
+                    class="panel-collapse collapse"
                     role="tabpanel"
                     aria-labelledby="headingThree"
                   >
-                    <div className="panel-body">
+                    <div class="panel-body">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life
                       accusamus terry richardson ad squid. 3 wolf moon officia
                       aute, non cupidatat skateboard dolor brunch. Food truck
