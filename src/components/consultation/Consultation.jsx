@@ -1,6 +1,54 @@
+import { useState } from "react";
 import "./consultation.css";
+import { client } from "../../client";
 
 const Consultation = () => {
+  const [error, setError] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    matter: "",
+    message: "",
+  });
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  // eslint-disable-next-line
+  const { name, phone, matter, message } = formData;
+
+  const handleChangeInput = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (
+      formData.name === "" ||
+      formData.phone === "" ||
+      formData.matter === "" ||
+      formData.message === ""
+    ) {
+      setError("Empty field(s) ");
+      return;
+    }
+    setLoading(true);
+
+    const consultation = {
+      _type: "consultation",
+      name: formData.name,
+      phone: formData.phone,
+      matter: formData.matter,
+      message: formData.message,
+    };
+
+    client.create(consultation).then(() => {
+      setLoading(false);
+      setIsFormSubmitted(true);
+      e.preventDefault();
+    });
+  };
+
   return (
     <section id="consultation" className="consultation">
       <div className="container">
@@ -16,68 +64,84 @@ const Consultation = () => {
           </div>
         </div>
         <div className="row">
-          <form id="consultation-form" className="consultation-form">
-            <div className="form-group">
-              <div className="col-sm-4">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                />
+          {!isFormSubmitted ? (
+            <form className="consultation-form" onSubmit={handleSubmit}>
+              <div className="form-group">
+                <div className="col-sm-4">
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="name"
+                    placeholder="Name"
+                    value={name}
+                    onChange={handleChangeInput}
+                    required
+                  />
+                </div>
               </div>
-            </div>
-            <div className="form-group">
-              <div className="col-sm-4">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="phone"
-                  name="phone"
-                  placeholder="Phone"
-                />
+              <div className="form-group">
+                <div className="col-sm-4">
+                  <input
+                    type="tel"
+                    className="form-control"
+                    name="phone"
+                    value={phone}
+                    onChange={handleChangeInput}
+                    placeholder="Phone"
+                    required
+                  />
+                </div>
               </div>
-            </div>
-            <div className="form-group">
-              <div className="col-sm-4">
-                <select
-                  className="selectpicker"
-                  data-live-search="true"
-                  data-width="100%"
+              <div className="form-group">
+                <div className="col-sm-4">
+                  <select
+                    className="selectpicker"
+                    data-live-search="true"
+                    data-width="100%"
+                    name="matter"
+                    value={matter}
+                    onChange={handleChangeInput}
+                    required
+                  >
+                    <option data-tokens="family">Family Law</option>
+                    <option data-tokens="business">Business Law</option>
+                    <option data-tokens="civil litigation">
+                      Civil Litigation
+                    </option>
+                    <option data-tokens="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div className="form-group">
+                <div className="col-sm-12">
+                  <textarea
+                    className="form-control"
+                    rows={8}
+                    placeholder="Case Description..."
+                    value={message}
+                    onChange={handleChangeInput}
+                    name="message"
+                    required
+                  />
+                </div>
+              </div>
+              <div className="col-sm-4 col-sm-offset-4">
+                <button
+                  id="cnfsubmit"
+                  type="submit"
+                  className="btn-default btn-block btn-cn"
+                  onClick={handleSubmit}
                 >
-                  <option data-tokens="family">Family Law</option>
-                  <option data-tokens="business">Business Law</option>
-                  <option data-tokens="civil litigation">
-                    Civil Litigation
-                  </option>
-                  <option data-tokens="other">Other</option>
-                </select>
+                  {!loading ? "Get Consultation" : "Sending..."}
+                </button>
+                {error !== "" && <p>{error}</p>}
               </div>
+            </form>
+          ) : (
+            <div>
+              <h3 className="head-text">Thank you for consulting us!</h3>
             </div>
-            <div className="form-group">
-              <div className="col-sm-12">
-                <textarea
-                  className="form-control"
-                  rows={8}
-                  placeholder="Case Description..."
-                  id="case-des"
-                  name="case-des"
-                  defaultValue={""}
-                />
-                {/* <input type="text" class="form-control" id="case-des" placeholder="Case Description..."> */}
-              </div>
-            </div>
-            <div className="col-sm-4 col-sm-offset-4">
-              <button
-                id="cnfsubmit"
-                type="submit"
-                className="btn-default btn-block btn-cn"
-              >
-                Get Consultation
-              </button>
-            </div>
-          </form>
+          )}
         </div>
       </div>
     </section>
