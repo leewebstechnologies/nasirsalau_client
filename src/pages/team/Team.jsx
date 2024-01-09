@@ -1,6 +1,18 @@
+import { useEffect, useState } from "react";
 import "./team.css";
+import { urlFor, client } from "../../client";
+// import { images } from "../../constants";
 
 const Team = () => {
+  const [teams, setTeams] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "teams"]';
+
+    client.fetch(query).then((data) => {
+      setTeams(data);
+    }, []);
+  });
   return (
     <>
       <section id="team" className="team">
@@ -14,29 +26,32 @@ const Team = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-sm-4">
-              <div className="team-box">
-                <img
-                  className="img-responsive img-full"
-                  src="assets/images/team-1.jpg"
-                  alt="team"
-                />
-                <div className="team-detail">
-                  <ul>
-                    <li>
-                      <h3>Nasir Salau</h3>
-                    </li>
-                    <li>
-                      <h4>Lead Counsel</h4>
-                    </li>
-                    <li>Family Law</li>
-                    <li>Commercial Lending,</li>
-                    <li>Real Estate</li>
-                  </ul>
+            {teams.map((team) => (
+              <div className="col-sm-4">
+                <div className="team-box">
+                  <img
+                    className="img-responsive img-full"
+                    src={urlFor(team.imgUrl)}
+                    alt={team.title}
+                  />
+                  <div className="team-detail">
+                    <ul>
+                      <li>
+                        <h3>{team.name}</h3>
+                      </li>
+                      <li>
+                        <h4>{team.position}</h4>
+                      </li>
+                      <li>{team.specialisation_a}</li>
+                      <li>{team.specialisation_b}</li>
+                      <li>{team.specialisation_c}</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-sm-4">
+            ))}
+
+            {/* <div className="col-sm-4">
               <div className="team-box">
                 <img
                   className="img-responsive img-full"
@@ -57,8 +72,8 @@ const Team = () => {
                   </ul>
                 </div>
               </div>
-            </div>
-            <div className="col-sm-4">
+            </div> */}
+            {/* <div className="col-sm-4">
               <div className="team-box">
                 <img
                   className="img-responsive img-full"
@@ -79,7 +94,7 @@ const Team = () => {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
