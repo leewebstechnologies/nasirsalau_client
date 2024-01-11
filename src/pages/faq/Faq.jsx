@@ -1,17 +1,6 @@
-import { useState, useEffect } from "react";
-import { client } from "../../client";
 import "./faq.css";
 
 const Faq = () => {
-  const [faqs, setFaqs] = useState([]);
-
-  useEffect(() => {
-    const query = '*[_type == "faqs"]';
-
-    client.fetch(query).then((data) => {
-      setFaqs(data);
-    });
-  }, []);
   return (
     <>
       <section id="faq" class="faq overlay-light">
