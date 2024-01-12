@@ -1,6 +1,17 @@
 import "./faq.css";
+// import { useState, useEffect } from "react";
+// import { client } from "../../client";
 
 const Faq = () => {
+  // const [faqs, setFaqs] = useState([]);
+
+  // useEffect(() => {
+  //   const query = '*[_type == "faqs"]';
+
+  //   client.fetch(query).then((data) => {
+  //     setFaqs(data);
+  //   });
+  // }, []);
   return (
     <>
       <section id="faq" class="faq overlay-light">
@@ -13,7 +24,6 @@ const Faq = () => {
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-sm-12">
               <div
@@ -45,20 +55,30 @@ const Faq = () => {
                     aria-labelledby="headingOne"
                   >
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                      - As per Supreme Court judgement, wife is expected to move
+                      in with the relatives of their husbands, follow the rules
+                      and customs of their home, and ideally, blend in
+                      seamlessly as a new daughter. - Further, the court granted
+                      divorce to a man on the grounds of “cruelty” after his
+                      wife refused to share a home with her in-laws. - Further,
+                      If wife is not supporting her husband for the enjoyment of
+                      life and denying relation, then the husband can get
+                      divorce after filing a divorce petition before the court
+                      on this ground. - If she is not interested to live with
+                      you , then she can take mutual divorce under the Muslim
+                      Law legally . - Further , as per law, A mother usually
+                      gets custody of the minor child, under the age of five and
+                      fathers get custody of older boys, but it is not a strict
+                      rule and is primarily decided based on the child’s
+                      interests. - The choice of a child above the age of nine
+                      is considered, and further a mother who is proven to
+                      neglect or ill-treat the child is not given custody. -
+                      Hence, for getting custody of the child , you can file a
+                      petition before the court.
                     </div>
                   </div>
                 </div>
+
                 <div class="panel panel-default">
                   <div class="panel-heading" role="tab" id="headingTwo">
                     <h4 class="panel-title">
@@ -83,17 +103,21 @@ const Faq = () => {
                     aria-labelledby="headingTwo"
                   >
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                      it can be noted that the process of getting a divorce in
+                      Nigeria is a bit longer process compared to divorce
+                      processes in foreign jurisdictions. And for a suit of
+                      dissolution of marriage to be successful in Nigeria, the
+                      Petitioner must have brought his or her petition in line
+                      with the ground and facts stated under the Matrimonial
+                      Causes Act and must satisfy the various requirements of
+                      the law. It is important to know that a divorce may be
+                      very expensive in Nigeria. The cost of divorce in Nigeria
+                      is usually determined by facts or the nature of the
+                      divorce. The fact of the case is what would determine the
+                      time and industry a lawyer handling the matter would put
+                      into it. And the legal fee in Nigeria is usually based on
+                      the quantum of work done by the lawyer(s) on a client’s
+                      case.
                     </div>
                   </div>
                 </div>
@@ -120,17 +144,14 @@ const Faq = () => {
                     aria-labelledby="headingThree"
                   >
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                      Diaries are wonderful objects that allow you to discuss
+                      your emotions, record dreams or ideas, and reflect on
+                      daily life in a safe, private space. While there's no
+                      single, definitive way to write a diary, there are some
+                      basic tricks you can use to get the most out of your
+                      writing. If you aren't sure what to write about, using
+                      prompts like inspirational quotes can help get started on
+                      new entries.
                     </div>
                   </div>
                 </div>
@@ -157,17 +178,23 @@ const Faq = () => {
                     aria-labelledby="headingThree"
                   >
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                      In addition to being legally required, keeping corporate
+                      records has practical value for your business. For
+                      example, your records help you track your corporation’s
+                      progress over the years, and your tax returns from
+                      previous years will help you complete future tax returns.
+                      Corporate records also maintain what is commonly called
+                      the “corporate veil,” which is the division between the
+                      corporation’s assets and the personal assets of the
+                      corporation’s members. These records prove that your
+                      business is compliant, and without that compliance, your
+                      personal assets could be in jeopardy. Essentially, proper
+                      records protect you and your business during any lawsuits
+                      and audits. Finally, good records could increase the value
+                      of your company by proving your corporation’s worth. If
+                      you ever wish to sell your business, the buyer will want
+                      to see your records to back up the “sticker price” you
+                      set.
                     </div>
                   </div>
                 </div>
