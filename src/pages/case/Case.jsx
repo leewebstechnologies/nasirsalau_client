@@ -21,7 +21,7 @@ const Case = () => {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 30000);
+    }, 5000);
     return () => clearInterval(slider);
   }, [index]);
   return (
