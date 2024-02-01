@@ -18,7 +18,7 @@
 }
 .navbar-brand img {
   width: 60px;
-   transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .navbar-toggle {
   border-radius: 0;
@@ -38,10 +38,9 @@
 }
 
 .brand-name {
-    margin-top: -2rem;
-    margin-left: 10rem;
-    color: #fff;
-
+  margin-top: -2rem;
+  margin-left: 10rem;
+  color: #fff;
 }
 
 .brand {
@@ -63,9 +62,8 @@
   }
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .img-responsive {
     margin-top: -1rem;
   }
 }
-
