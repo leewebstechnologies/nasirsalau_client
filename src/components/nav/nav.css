@@ -35,9 +35,6 @@
 
 .img-responsive {
   margin-top: -2rem;
-  @media screen and (max-width: 786px) {
-    margin-top: -1rem;
-  }
 }
 
 .brand-name {
@@ -47,10 +44,28 @@
 
 }
 
+.brand {
+  display: flex;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .brand {
+    font-size: 30px;
+    margin-top: -2rem;
+  }
+}
+
 @media screen and (max-width: 786px) {
   .brand-name {
-    margin-top: -3.5rem;
+    margin-top: -3rem;
     margin-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .img-responsive {
+    margin-top: -1rem;
   }
 }
 

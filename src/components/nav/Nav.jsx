@@ -18,13 +18,15 @@ const Nav = () => {
               <span className="icon-bar" />
               <span className="icon-bar" />
             </button>
-            <a className="nav navbar-brand" href="logo">
-              <img
-                className="img-responsive"
-                src="assets/images/logo.png"
-                alt="logo"
-              />
-              <h2 className="brand-name">Nasir Salau & Co</h2>
+            <a className="navbar-brand" href="logo">
+              <div className="brand">
+                <img
+                  className="img-responsive"
+                  src="assets/images/logo.png"
+                  alt="logo"
+                />
+                <h2>Nasir Salau & Co</h2>
+              </div>
             </a>
           </div>
 
