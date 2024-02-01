@@ -7,19 +7,16 @@
 .intro-box {
   height: 100vh;
 }
-.intro h1 {
+.intro h3 {
   position: relative;
   color: #fff;
   font-size: 90px;
   text-transform: uppercase;
   line-height: 1;
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
 }
 
-.intro h1:after,
-.intro h1:before {
+.intro h3:after,
+.intro h3:before {
   content: "";
   position: absolute;
   left: 0;
@@ -27,10 +24,10 @@
   height: 5px;
   background-color: #fff;
 }
-.intro h1:after {
+.intro h3:after {
   bottom: 0;
 }
-.intro h1:before {
+.intro h3:before {
   top: 0;
 }
 .btn-header {
@@ -43,11 +40,7 @@
   left: calc(50% - 89px);
   border-radius: 0;
 }
-@media (max-width: 991px) {
-  .btn-header {
-    bottom: 30px;
-  }
-}
+
 
 .fun {
   text-align: center;
@@ -72,7 +65,7 @@
   background-color: #a0636a;
   padding: 100px 0;
 }
-.cta h1 {
+.cta h3 {
   text-transform: uppercase;
 }
 .cta-btn {
@@ -89,4 +82,16 @@
 
 .button {
   color: #fff;
+}
+
+@media (max-width: 991px) {
+  .btn-header {
+    bottom: 30px;
+  }
+}
+.profession {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50rem;
 }

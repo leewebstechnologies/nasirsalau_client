@@ -23,23 +23,22 @@ const Home = () => {
   }, []);
   return (
     <>
-      <header id="header" className="header overlay-dark">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-6 col-sm-offset-3">
-              <div className="intro-box c-table">
-                <div className="intro ct-cell">
+      <header id="header" class="header overlay-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="intro-box c-table">
+                <div class="intro ct-cell">
                   <h1 className="profession">LEGAL PRACTITIONERS</h1>
                 </div>
               </div>
-              <a className="button btn btn-default btn-header" href="#contact">
+              {/* <a class="btn btn-default btn-header" href="#contact">
                 Contact us
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
       </header>
-
       <section id="fun" className="fun">
         <div className="container">
           <div className="row">
