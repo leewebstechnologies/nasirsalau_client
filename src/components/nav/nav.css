@@ -44,9 +44,12 @@
     margin-top: -5rem;
     margin-left: 10rem;
     color: #fff;
-    @media screen and (max-width: 768px) {
-        font-size: 20px;
-        margin-top: -30px;
-        margin-left: 5rem;
-    }
+
+}
+
+@media screen and (max-width: 786px) {
+  .brand-name {
+    margin-top: -3.5rem;
+    margin-left: 6rem;
+  }
 }
