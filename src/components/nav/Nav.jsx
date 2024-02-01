@@ -25,7 +25,7 @@ const Nav = () => {
                   src="assets/images/logo.png"
                   alt="logo"
                 />
-                <h2>Nasir Salau & Co</h2>
+                <h3>Nasir Salau & Co</h3>
               </div>
             </a>
           </div>
