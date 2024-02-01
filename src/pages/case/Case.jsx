@@ -30,7 +30,7 @@ const Case = () => {
         <div class="row">
           <div class="col-sm-4 hidden-xs">
             <img
-              class="img-responsive img-full mb0"
+              className="img-responsive img-full mb0"
               src="assets/images/family.png"
               alt="familly"
             />

@@ -119,3 +119,23 @@ article.nextSlide {
   transform: translateX(2%);
 }
 
+
+@media screen and (max-width: 1000px){
+  article {
+    height: 400px;
+    margin-top: -8rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  article {
+    height: 400px;
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .slider-1 {
+    height: 500px;
+  }
+}
