@@ -18,7 +18,7 @@ const Nav = () => {
               <span className="icon-bar" />
               <span className="icon-bar" />
             </button>
-            <a className="navbar-brand" href="logo">
+            <a className="nav navbar-brand" href="logo">
               <img
                 className="img-responsive"
                 src="assets/images/logo.png"
