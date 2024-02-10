@@ -32,9 +32,6 @@ const Home = () => {
                   <h1 className="profession">LEGAL PRACTITIONERS</h1>
                 </div>
               </div>
-              {/* <a class="btn btn-default btn-header" href="#contact">
-                Contact us
-              </a> */}
             </div>
           </div>
         </div>
