@@ -67,6 +67,8 @@
 .cta h3 {
   text-transform: uppercase;
 }
+
+
 .cta-btn {
   margin-top: 20px;
   display: inline-block;
@@ -81,6 +83,11 @@
 
 .button {
   color: #fff;
+}
+
+h4 {
+  text-align: justify;
+  line-height: 30px;
 }
 
 @media (max-width: 991px) {

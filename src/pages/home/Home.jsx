@@ -1,26 +1,6 @@
 import "./home.css";
-import { useState, useEffect } from "react";
-import { client } from "../../client";
-
-// eslint-disable-next-line
-// const homes = [
-//   {
-//     figure: 2001,
-//     percentage: 97,
-//     amount: 30,
-//   },
-// ];
 
 const Home = () => {
-  const [homes, setHomes] = useState([]);
-
-  useEffect(() => {
-    const query = '*[_type == "homes"]';
-
-    client.fetch(query).then((data) => {
-      setHomes(data);
-    });
-  }, []);
   return (
     <>
       <header id="header" class="header overlay-dark">
@@ -37,7 +17,6 @@ const Home = () => {
         </div>
       </header>
 
-      {/* CTA */}
       <section id="cta" className="cta">
         <div className="container">
           <div className="cta-bg">
@@ -102,12 +81,11 @@ const Home = () => {
                   experience in Company related matters. Thereafter he worked
                   with the leading law firm of Paul Usoro until December 1995
                   when he founded Nasir Salau & Co. after honing his skills as
-                  an Associate Attorney.    Nasir Salau who is an Associate of
-                  the Chartered Institute of Secretaries and
-                  Administrators(ACIS) was appointed a Notary Public by the
-                  Chief Justice of Nigeria in 1999. He has vast experience in
-                  legal issue relating to the aviation, telecommunication and
-                  the banking industries.
+                  an Associate Attorney. Nasir Salau who is an Associate of the
+                  Chartered Institute of Secretaries and Administrators(ACIS)
+                  was appointed a Notary Public by the Chief Justice of Nigeria
+                  in 1999. He has vast experience in legal issue relating to the
+                  aviation, telecommunication and the banking industries.
                 </h4>
               </div>
               <div className="col-sm-6">
