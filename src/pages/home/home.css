@@ -90,14 +90,20 @@ h4 {
   line-height: 30px;
 }
 
-@media (max-width: 991px) {
-  .btn-header {
-    bottom: 30px;
-  }
-}
 .profession {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20rem;
 }
+
+@media (max-width: 991px) {
+  .btn-header {
+    bottom: 30px;
+  }
+
+  h4 {
+    margin: 0 10px 0 10px;
+  }
+}
+
